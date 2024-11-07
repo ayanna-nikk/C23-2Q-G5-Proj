@@ -1,6 +1,7 @@
 body {
 	margin: 0px;
 	background-image: url("background.png");
+	background-size: auto;
 }
 
 nav {
@@ -81,7 +82,7 @@ p{
 	font-size: 20px;
 	margin: 10px 50px 10px;
 	padding: 10px;
-	width: 400px;
+	width: auto;
 }
 
 .h-box {
@@ -117,7 +118,7 @@ h2 {
 	font-family: Century, "Times New Roman", serif;
 	color: #FFFFFF;
 	font-size: 25px;
-	width: 1300px;
+	width: auto;
 	text-align: justify;
 }
 
@@ -139,7 +140,7 @@ p.section-disc {
 	padding: 0px 0px 0px 10px;
 	margin: 0px -30.906px 0px 0px;
 	font-size: 25px;
-	width: 550px;
+	width: auto;
 }
 
 .section-img {
@@ -188,7 +189,7 @@ article h2{
 }
 
 article p {
-	width: 200px;
+	width: auto;
 	font-family: Century, "Times New Roman", serif;
 	color: #FFFFFF;
 	text-align: center;
