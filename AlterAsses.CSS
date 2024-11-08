@@ -96,8 +96,8 @@ p{
 .img-float {
 	float: right;
 	clear: right;
-	position: relative;
-	top: -245px;
+	position: absolute;
+	top: -45px;
 	right: 5px;
 }
 
