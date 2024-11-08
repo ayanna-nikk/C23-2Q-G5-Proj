@@ -1,7 +1,9 @@
 body {
 	margin: 0px;
+	width: 1920px !important;
+	max-width: 200%;
 	background-image: url("background.png");
-	background-size: auto;
+	background-size: 1920px 2300px;
 }
 
 nav {
@@ -24,7 +26,7 @@ nav ul li a{
 	font-family: Century, "Times New Roman", serif;
 	color: #000000;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
 	padding: 10px;
 }
@@ -41,20 +43,20 @@ a:visited {
 
 a:hover {
 	background-color: #265F3F;
-	font-size: 17px;
+	font-size: 22px;
 	color: #FFFFFF;
 }
 
 a:active {
 	background-color: #87AB69;
-	font-size: 17px;
+	font-size: 22px;
 	color: #265F3F;
 }
 
 a.nav-active {
 	background-color: #87AB69;
-	font-size: 17px;
-	color: #FFFFFF;
+	font-size: 22px;
+	color: #265F3F;
 }
 
 header > h1 {
@@ -79,7 +81,7 @@ p{
 	color: #FFFFFF;
 	font-family: Century, "Times New Roman", serif;
 	text-align: left;
-	font-size: 20px;
+	font-size: 30px;
 	margin: 10px 50px 10px;
 	padding: 10px;
 	width: 400px;
@@ -113,12 +115,12 @@ h2 {
 }
 
 .p-font {
-	margin: 0px;
+	margin: 0px 30px 0px 30px;
 	padding: 10px;
 	font-family: Century, "Times New Roman", serif;
 	color: #FFFFFF;
 	font-size: 25px;
-	width: auto;
+	width: 95%;
 	text-align: justify;
 }
 
@@ -127,19 +129,21 @@ h2 {
 }
 
 .section-disc {
-	width: 425px;
+	width: 520px;
 	float: right;
 	clear: right;
 	position: relative;
 	top: 10px;
 	right: 6%;
 	color: #FFFFFF;
+	text-align: center;
 }
 
 p.section-disc {
 	padding: 0px 0px 0px 10px;
 	margin: 0px -30.906px 0px 0px;
-	font-size: 25px;
+	font-size: 30px;
+	text-align: justify;
 	width: 550px;
 }
 
@@ -151,63 +155,39 @@ p.section-disc {
 	left: 10%;
 }
 
-article > section {
-	background-color: #8AAB6B;
-}
-
 article {
-	border-top: 3px solid #FFFFFF;
+	border-top: 5px solid #FFFFFF;
+    padding: 20px;
+    color: #FFFFFF;
 }
 
 article h2{
-	text-align: center;	
-	color: #FFFFFF;
-}
-
-.fservice {
-	float: left;
-	clear: left;
-	position: relative;
-	top: 10px;
-	left: 10%;
-}
-
-.sservice {
-	float: left;
-	clear: left;
-	position: relative;
-	top: -240px;
-	left: 40%;
-}
-
-.tservice {
-	float: right;
-	clear: right;
-	position: relative;
-	top: -240px;
-	right: 10%;
-}
-
-article p {
-	width: 200px;
-	font-family: Century, "Times New Roman", serif;
-	color: #FFFFFF;
 	text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
-article img {
-	width: 250px;
-	height: 250px;
+.fservice, .sservice, .tservice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-p.fservice {
-	margin: -240px 0px 0px 15px;
+.fservice img, .sservice img, .tservice img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0px 0px 0px 400px;
+    display: block;
 }
 
-p.sservice {
-	margin: -207px 0px 0px 15px;
-}
-
-p.tservice {
-	margin: -207px 15px 0px 0px;
+.fservice p, .sservice p, .tservice p {
+	width: 100%;
+    max-width: 550px;
+	height: auto;
+	font-family: Century, "Times New Roman", serif;
+	font-size: 25px;
+    text-align: justify;
+    margin: 0;
 }
